@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ABOUT US</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" >
+    <link href="index.css" rel="stylesheet"/>
+    <link href="aboutus.css" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+  
+    <header>
+        <div class="mainlogo">
+            <a href="index.html" class="logo"><img src="picture/logo.jpg"/>HOLAN HOTEL</a> 
+           
+       </div>  
+      
+        <div class="navlist">
+        <a  href="facilities.html">Facilities</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>  
+        <a href="review.html">Review</a>
+        <a href="Room&Residents.html">Room & Residents</a>
+        <a href="support.html">Support</a>
+        <a href="booking.html">Book Now</a>
+          
+      </div>
+    
+    
+      <div class="dropdown">
+            <button  class="drpbtn"><img src="picture/profileicon.png"/></button>
+            
+            <div class="dropdown-content">
+            <a href="signin.html">SIGN IN</a>
+            <a href="singup.html">SIGN UP</a>
+            <a href="checkin&out.html">CHECK IN/OUT</a>
+             </div>
+            </div>
+         </header>
+    
+
+         <div class="title"><h1>WHY SAY WE ARE CLOSEST TO THE SUN</h1></div>
+
+
+<div class="slide-container">
+  <div class="Slideshow">
+   
+    <img src="picture/sunset1.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+  
+    <img src="picture/sunset2.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+   
+    <img src="picture/sunset3.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slideshow">
+    
+    <img src="picture/sunset4.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+    <div class="numbertext"></div>
+    <img src="picture/sunset5.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slideshow">
+   
+    <img src="picture/sunset6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusslides(-1)">❮</a>
+  <a class="next" onclick="plusslides(1)">❯</a>
+
+
+
+  <div class="row">
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset1.jpg" style="width:100%" onclick="Slide(1)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset2.jpg" style="width:100%" onclick="Slide(2)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset3.jpg" style="width:100%" onclick="Slide(3)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset4.jpg" style="width:100%" onclick="Slide(4)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset5.jpg" style="width:100%" onclick="Slide(5)">
+    </div>    
+    <div class="column">
+      <img class="smallimg cursor" src="picture/sunset6.jpg" style="width:100%" onclick="Slide(6)" >
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let slidenum=1;
+  showslides(slidenum);
+
+  function plusslides(n){
+
+    showslides(slidenum +=n);
+  }
+
+  function Slide(n){
+
+    showslides(slidenum=n);
+  }
+
+  function showslides(n){
+
+    let i;
+    let slides=document.getElementsByClassName("Slideshow");
+    let dots=document.getElementsByClassName("smallimg");
+    if(n>slides.length)
+    {slidenum = 1}
+
+    if(n < 1)
+    {slidenum = slides.length}
+
+    for(i=0;i<slides.length;i++){
+
+      slides[i].style.display="none";
+
+
+    }
+    for(i=0;i<dots.length;i++){
+
+      dots[i].className=dots[i].className.replace("active","");
+    }
+    slides[slidenum-1].style.display="block";
+    dots[slidenum-1].className+="active";
+  }
+</script>
+    
+<div class="about-container">
+
+  <article class="history">
+
+    <div class="story">
+    <h1>OUR STORY</h1>
+    <p>HOLAN HOTEL has a long history. It was established in July 2023.
+       Our five founders, commonly known as "HOLAN MEMBER" are committed to making those who don't 
+       know why they come to HOLAN feel at home. At the same time, they like the sun, and they hope to 
+       convey their love to more people, so they established this HOTEL and their slogan 
+       "We are the people closest to the sun."</p></div>
+
+       <div class="hotel">
+       <img src="picture/images.jpg" alt="HOLAN HOTEL" width="100%"/></div>
+  </article>
+
+
+  <div class="fivelegend">
+
+    <h1>HERE ARE THE FIVE HOLAN MEMBER</h1>
+
+    <div class="member">
+
+      <div class="member1">
+        <img src="picture/lefthand.jpg"  class="pmember1">
+        <p>This person known as Road People.This is the person responsible for creating and designing the room. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+      <div class="member2">
+        <img src="picture/leftleg.jpg"  class="pmember2">
+        <p>This person known as King of HOLAN.This is the person responsible for customer service. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+      <div class="member3">
+        <img src="picture/tou.jpg"  class="pmember3">
+        <p>This person known as QUEEN of HOLAN.This is the person responsible for creating and designing the room. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+      <div class="member4">
+        <img src="picture/rightleg.jpg"  class="pmember4">
+        <p>This person known as THIRD TREE of HOLAN.This is the 
+          person responsible for creating and designing the room. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+      <div class="member5">
+        <img src="picture/righthand.jpg"  class="pmember5">
+        <p>This person known as FOURT TREE of HOLAN.This is the person responsible for creating and designing the room. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <h1>OUR ACHIVEMENT</h1>
+   <div class="achievement-content">
+   <div class="michelin">
+    <img src="picture/michelin.png" width="100%" class="michelinimg">
+
+    <p>According to the hard from 5 HOLAN MEMBER.We approve as a 5-star in michelin Hotel.</p>
+   </div>
+   <div class="nobel">
+    <img src="picture/nuobeer.jpg" width="100%" class="nobelimg">
+
+    <p>According to the hard from 5 HOLAN MEMBER.We get the Nobel Prize as the HOLAN HOTEL
+      make contribute in help humans move to the sun.
+    </p>
+
+   </div>
+   <div class="guinness">
+    <img src="picture/jinishi.png" width="100%" class="jinishiimg">
+
+      <p>We are the fast and the first hotel to get the 5-star in michelin.No any hotel get 
+        in the food award in the world.But we are the first one and the fast in the world to get this award.
+        We get this award within 3 days since we open.
+
+      </p>
+   
+   </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+<div class="service">
+
+  <img class="servicebackground" src="picture/service.jpg" width="100%"/>
+   <div class="colorabout"></div>
+  <div class="servicecontent">
+  <h1>OUR SERVICE</h1>
+  <p>We attach great importance to our guests' accommodation experience. 
+    In order to make them feel at home, we make our waiters as friendly as mothers. 
+    We will listen to all opinions just as your mother listened to your cries. In addition,
+    we have a Michelin five-star restaurant and chefs to make guests feel the taste of mother.
+    Our chefs have specially traveled around the world to experience the food cooked by mothers 
+    from different countries and create the most suitable food for mothers.</p>
+   <div class="serviceimg1">
+    <img src="picture/service.jpg" width="30%"/>
+    <img src="picture/HOLAN RESTAURANT.png" width="20%"/>
+   </div>
+
+   <p>We also provide free WIFI, which is WIFI developed by ourselves. Its technology works on the sun. In addition, 
+    we also provide various facilities for our guests to use. These facilities are also applicable to the sun.
+    Besides that,we also provide automatically Check IN and Check Out via the system we developed.This system is 
+    developed when the five HOLAN MEMBER visit to sun.
+  </p>
+
+  <div class="serviceimg2">
+    <img src="picture/wifi.jpg" width="30%"/>
+    <img src="picture/facilities.jpg" width="30%"/>
+    <img src="picture/auto.png" width="20%"/>
+   </div>
+  </div>
+  
+</div>
+
+</body>
+
+</html>
