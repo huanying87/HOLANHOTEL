@@ -1,1 +1,0 @@
-# HOLANHOTEL.github.io
