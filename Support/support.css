@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@font-face{
+    font-family:caveat;
+     src:url(Caveat-VariableFont_wght.ttf);
+}
+body{
+   
+    background-color: grey;
+   
+}
+
+
+
+
+
+/* Support Centre */
+.supportContainer{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+.supportHead h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    font-style: italic;
+    color: white;
+}
+
+.supportHead h3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+input[type=text]{
+    margin-left: 35%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30%;
+    border: none;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.searchNav button {
+    padding: 6px 8px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background: #ddd;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .searchNav button:hover {
+    background: #ccc;
+  }
+
+.supportContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+
+.supportContainer p{
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 10px 10px 0 10px;
+}
+
+.supportContainer img{
+    margin-top: 15px;
+}
+
+
+.containerFaq{
+        width: 220px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: #BAA382;
+        border-radius: 10px;
+}
+
+.containerFaq:hover{
+    background-color: #d1ba9a;
+    cursor: pointer;
+    transition: .8s;
+}
+
+
+.containerPrivate{
+        width: 220px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: #BAA382;
+        border-radius: 10px;
+}
+
+.containerPrivate:hover{
+    background-color: #d1ba9a;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.containerBill{
+    width: 220px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #BAA382;
+    border-radius: 10px;
+}
+
+.containerBill:hover{
+    background-color: #d1ba9a;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.containerContact{
+    width: 220px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #BAA382;
+    border-radius: 10px;
+}
+
+.containerContact:hover{
+    background-color: #d1ba9a;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.information{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.notice{
+margin-top: 20px;
+
+}
+
+.notice h3{
+color: #ffffff;
+text-decoration: underline;
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.notice li{
+    color: white;
+    cursor: pointer;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.announcement{
+    margin-top: 20px;
+}
+
+.announcement h3{
+color: #ffffff;
+text-decoration: underline;
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.announcement li{
+    color: white;
+    cursor: pointer;
+}
+
+.article{
+    margin-top: 20px;
+}
+
+.article h3{
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.article li{
+    color: white;
+    cursor: pointer;
+}
+
+/* Chat Box */
+.chat-container {
+    position: relative;
+    display: inline-block;
+}
+
+.show-btn {
+    transform: rotate(-90deg);
+    position: fixed;
+    min-width: 64px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%; 
+    right: -32px;
+    font-weight: 500;
+    font-family: "Reforma 1969","AXtManalBold Regular",Helvetica,Arial,"Microsoft Yahei","PingFang SC","PingFang TC","PingFang HK","Hiragino Sans",sans-serif;
+    z-index: 1;
+    line-height: 1.75;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background-color: #BAA382;
+    border-radius: 12px;
+}
+
+.show-btn svg {
+    width: 30px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#show:checked ~ .wrapper{
+    display:block;
+}
+
+.wrapper{
+    display:none;
+    width: 320px;
+    height: 340px;
+    margin: 60px auto;
+    background: #fff;
+    position: fixed;
+    right: 4%;
+    bottom: -50px;
+    border-radius: 10px;
+   
+}
+
+h5{
+    color: #fff;
+    padding: 15px;
+    background: #BAA382;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+.chat{
+    display: flex;
+}
+
+.chat, .chatbox{
+    overflow: auto;
+    max-height: 75%; 
+}
+
+.chatbox .incoming span{
+    height: 32px;
+    width: 32px;
+    background: #BAA382;
+    align-self: flex-end;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+}
+
+.chatbox-toggler{
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    background: #BAA382;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper p{
+    color: white;
+    white-space: pre-wrap;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #BAA382;
+    border-radius: 10px 10px 0 10px;
+}
+
+.incoming p {
+    color: black;
+    background: lightgray;
+    border-radius: 10px 10px 10px 0;
+}
+
+.outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chat-input{
+    border-radius: 5%;
+    background-color: #BAA382;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 5px 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input textarea {
+    height: 30px;
+    width: 100%;
+    border: none;
+     outline: none;
+    font-size: 13px;
+    resize: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+
+}
+
+.chat-input span{
+    align-self: flex-end;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.chat-input textarea:valid ~ span{
+    visibility: visible;
+}
+
+.chat-input::placeholder{
+    color: black;
+}
+
+input:focus{
+    border-color: #BAA382;
+}
+
+
+.wrapper{
+    animation: popup 0.5s;
+
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
