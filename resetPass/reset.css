@@ -1,0 +1,235 @@
+@charset "utf"; 
+
+body{
+    min-width:50%;
+    max-width:100%;
+    background-color: burlywood;
+    height: 1100px;
+    z-index: -1;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    height: 1200px;
+    top: 100px;
+  }
+
+article{
+    border: solid transparent;
+    position: relative;
+    margin-top: 106.67px;
+}
+
+/*for chat box*/
+.show-btn {
+    transform: rotate(-90deg);
+    position: fixed;
+    min-width: 64px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%; 
+    right: -32px;
+    font-weight: 500;
+    font-family: "Reforma 1969","AXtManalBold Regular",Helvetica,Arial,"Microsoft Yahei","PingFang SC","PingFang TC","PingFang HK","Hiragino Sans",sans-serif;
+    z-index: 1;
+    line-height: 1.75;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background-color: #BAA382;
+    border-radius: 12px;
+}
+
+.show-btn svg {
+    width: 30px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#show:checked ~ .wrapper{
+    display:block;
+}
+
+.wrapper{
+    display:none;
+    width: 320px;
+    height: 400px;
+    margin: 80px auto;
+    background: #fff;
+    box-shadow:0px 10px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 4%;
+    bottom: -50px;
+    opacity: 0.95;
+}
+
+h5{
+    color: #fff;
+    padding: 15px;
+    background: #BAA382;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+p#wrapper{
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+form{
+    margin: 10px;
+    width: 270px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 234, 234);
+}
+
+#chat input{
+    display: block;
+    width: 92%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #BAA382;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(236, 234, 234);
+}
+
+#chat input::placeholder{
+    color: rgb(214, 211, 211);
+}
+
+button#button2{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #BAA382;
+    border-radius: 12px;
+}
+
+input:focus{
+    border-color: #BAA382;
+}
+
+button:hover{
+    background:#dc983a;
+}
+
+.wrapper{
+    animation: popup 0.5s;
+
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*set the background of the boder*/
+div.resetPassword_border{
+    border: solid  transparent;
+    background-color: antiquewhite;
+    height: 500px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 20px 40px 100px black;
+}
+
+/*let the button to the right*/
+button#button{
+    float: right;
+}
+
+/*design the button*/
+button#button{
+    border: solid transparent;
+    border-radius: 15px;
+    background-color: rgb(21, 20, 19);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 10%;
+}
+
+/*set the bold of the text and to center*/
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+
+/*set the size of the input border*/
+input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+label {
+    margin-top: 50px;
+}
+
+div#confirm {
+    margin-top: 30px;
+}
+
+/*Set the button*/
+button#reset {
+    margin-top: 8%;
+    margin-left: 17px;
+    width: 95%;
+    padding: 15px;
+    background-color: rgb(99, 173, 225);
+    border: solid transparent;
+}
+
+button#reset:hover {
+    background-color: rgb(42, 151, 228);
+}
+
+@media only screen and (max-width:1710px){
+    div.resetPassword_border{
+        border: solid  transparent;
+        background-color: antiquewhite;
+        height: 500px;
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 15px;
+        z-index: 1;
+    }
+}
