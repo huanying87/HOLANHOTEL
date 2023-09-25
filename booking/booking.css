@@ -733,7 +733,7 @@ button#button1:hover {
     }
 
     body {
-        height: 3550px;
+        height: 3000px;
         background-color: grey;
         z-index: 0.1;
     }
