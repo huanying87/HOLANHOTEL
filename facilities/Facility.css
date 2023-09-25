@@ -321,11 +321,11 @@ display:none;
 }
 
 div#column1 {
-  margin-left: 10px;
+  margin-left: 1px;
 }
 
 div#column2 {
-  margin-left: 10px;
+  margin-left: 1px;
 }
 
 .column img {
@@ -381,63 +381,63 @@ video.video {
 
 .btn {
     margin-left: -400px;
-    margin-top: 780px;
+    margin-top: 820px;
 }
 
 .btn2 {
   margin-left: -400px;
-  margin-top: 1250px;
+  margin-top: 1290px;
 }
 
 .btn3 {
   margin-left: -400px;
-  margin-top: 1500px;
+  margin-top: 1540px;
 }
 
 .btn4 {
   margin-left: -400px;
-  margin-top: 1910px;
+  margin-top: 1950px;
 }
 
 .btn5 {
-  margin-left: 230px;
-  margin-top: 880px;
+  margin-left: 200px;
+  margin-top: 920px;
 }
 
 .btn6 {
-  margin-left: 230px;
-  margin-top: 1140px;
+  margin-left: 200px;
+  margin-top: 1180px;
 }
 
 .btn7 {
-  margin-left: 230px;
-  margin-top: 1440px;
+  margin-left: 200px;
+  margin-top: 1490px;
 }
 
 .btn8 {
-  margin-left: 230px;
-  margin-top: 1910px;
+  margin-left: 200px;
+  margin-top: 1950px;
 }
 
 .btn9 {
-  margin-left: 860px;
-  margin-top: 930px;
+  margin-left: 800px;
+  margin-top: 970px;
 }
 
 .btn10 {
-  margin-left: 860px;
-  margin-top: 1190px;
+  margin-left: 800px;
+  margin-top: 1230px;
 }
 
 .btn4_1 {
-  margin-left: 860px;
-  margin-top: 1600px;
+  margin-left: 800px;
+  margin-top: 1630px;
   z-index: 1;
 }
 
 .btn11 {
-  margin-left: 860px;
-  margin-top: 1900px;
+  margin-left: 800px;
+  margin-top: 1940px;
 }
 
 /* the information of the facilities*/
@@ -536,25 +536,25 @@ button#bookingNow:hover {
 
 /*set the animated of the image when the pointer touch it*/
 img#size1 {
-  width: 610px;
+  width: 588px;
   height: 300px;
   z-index: -1;
 }
 
 img#size2 {
-  width: 610px;
+  width: 588px;
   height: 450px;
   z-index: -1;
 }
 
 img#size3 {
-  width: 610px;
+  width: 588px;
   height: 250px;
   z-index: -1;
 }
 
 img#size4 {
-  width: 610px;
+  width: 588px;
   height: 400px;
   z-index: -1;
 }
