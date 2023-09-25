@@ -77,5 +77,6 @@ function checkValue() {
 //show it successfully submit
 function submit(){
   
+  alert("Password Changed Successfully");
  
 }
