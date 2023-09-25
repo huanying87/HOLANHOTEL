@@ -342,7 +342,7 @@ h1#kingWord2 {
 
 .bed{
 
-    background: url('/room/picture/bedicon.svg') ;
+    background: url("/room/picture/bedicon.svg") ;
     padding: 5px 10px 5px 25px;
     list-style: none;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ h1#kingWord2 {
 
 .how{
 
-    background: url('/room/picture/how.svg') ;
+    background: url("/room/picture/how.svg") ;
     padding: 5px 10px 5px 25px;
     list-style: none;
     vertical-align: middle;
@@ -362,7 +362,7 @@ h1#kingWord2 {
 
 .area{
 
-    background: url('/room/picture/area.svg') ;
+    background: url("/room/picture/area.svg") ;
     padding: 5px 10px 5px 25px;
     list-style: none;
     vertical-align: middle;
@@ -402,7 +402,7 @@ button#button1:hover {
 
 #dollar{
 
-    background: url('/room/picture/priceicon.svg') ;
+   background:url("/room/picture/priceicon.svg");
     padding: 5px 10px 5px 25px;
     list-style: none;
     vertical-align: middle;
