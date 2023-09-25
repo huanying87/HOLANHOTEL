@@ -1,0 +1,165 @@
+@charset "utf"; 
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    height: 1200px;
+    top: 100px;
+}
+
+article{
+    border: solid transparent;
+    position: relative;
+    margin-top: 106.67px;
+}
+
+.footer {
+    margin-top: 200px;
+}
+
+
+/*design the button*/
+div.sign-in_button{
+    margin-top: 0%;
+}
+
+button#sign-in_button{
+    border: solid transparent;
+    border-radius: 15px;
+    background-color: rgb(21, 20, 19);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 10%;
+    margin-left: 90%;
+}
+
+/*set the border to the center*/
+div.forgot-pass_border{
+    border: solid  transparent;
+    background-color: antiquewhite;
+    height: 550px;
+    width: 70%;
+    margin: auto;
+    margin-top: 16%;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 10px 10px 40px white;
+}
+
+/*set the bold of the text and to center*/
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: cursive;
+}
+
+/*set the input bolder*/
+input[type=text]#tel-mail{
+    margin-top: 5px;
+    padding: 10px;
+    width: 60%;
+    margin-left: 2%;
+    border: solid transparent;
+}
+
+input[type=text]#verifycode{
+    margin-top: 5px;
+    width: 30%;
+    margin-left: 2%;
+    border: solid transparent;
+    padding: 10px;
+}
+
+input[type=text]#verifycode2 {
+    margin-top: 5px;
+    width: 30%;
+    margin-left: 2%;
+    border: solid transparent;
+    padding: 10px;
+}
+
+.verifycode2 {
+    margin-top: 1px;
+}
+
+/*set the pattern of the button*/
+button#send_code{
+    border: solid transparent;
+    background-color: rgb(94, 148, 12);
+    color: white;
+    border-radius: 30px;
+    margin-left: 8%;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button#send_code:hover {
+    background-color: rgb(63, 102, 1);
+}
+
+/*set the border of the input of the enter code*/
+div#code {
+    margin-top: 30px;
+}
+
+/*set adjust the size of the verification code*/
+img#code {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+/*set the pattern of the reset button*/
+button#reset {
+    margin-top: 3%;
+    margin-left: 48px;
+    width: 90%;
+    padding: 15px;
+    background-color: rgb(99, 173, 225);
+    border: solid transparent;
+}
+
+button#reset:hover {
+    background-color: rgb(42, 151, 228);
+}
+
+/*adjust the position of the term and privacy*/
+div.termAndPrivacy {
+    text-align: center;
+    margin-top: 2%;
+}
+
+div.termAndPrivacy a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1710px){
+    div.forgot-pass_border{
+        border: solid  transparent;
+        background-color: antiquewhite;
+        height: 600px;
+        width: 75%;
+        margin: auto;
+        margin-top: 20%;
+        border-radius: 15px;
+        z-index: 1;
+    }
+    button#reset {
+        margin-top: 8%;
+        margin-left: 38px;
+        width: 90%;
+        padding: 15px;
+        background-color: rgb(99, 173, 225);
+        border: solid transparent;
+    }
+}
+
+  

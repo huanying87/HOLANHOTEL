@@ -1,0 +1,116 @@
+@charset "utf"; 
+
+body{
+    min-width:50%;
+    max-width:100%;
+    background-color: burlywood;
+    height: 1100px;
+    z-index: -1;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    height: 1200px;
+    top: 100px;
+  }
+
+article{
+    border: solid transparent;
+    position: relative;
+    margin-top: 106.67px;
+}
+
+
+
+/*set the background of the boder*/
+div.resetPassword_border{
+    border: solid  transparent;
+    background-color: antiquewhite;
+    height: 500px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 20px 40px 100px black;
+}
+
+/*let the button to the right*/
+button#button{
+    float: right;
+}
+
+/*design the button*/
+button#button{
+    border: solid transparent;
+    border-radius: 15px;
+    background-color: rgb(21, 20, 19);
+    color: aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 10%;
+}
+
+/*set the bold of the text and to center*/
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+
+/*set the size of the input border*/
+input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+label {
+    margin-top: 50px;
+}
+
+div#confirm {
+    margin-top: 30px;
+}
+
+/*Set the button*/
+button#reset {
+    margin-top: 8%;
+    margin-left: 17px;
+    width: 95%;
+    padding: 15px;
+    background-color: rgb(99, 173, 225);
+    border: solid transparent;
+}
+
+button#reset:hover {
+    background-color: rgb(42, 151, 228);
+}
+
+@media only screen and (max-width:1710px){
+    div.resetPassword_border{
+        border: solid  transparent;
+        background-color: antiquewhite;
+        height: 500px;
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 15px;
+        z-index: 1;
+    }
+}
+
+footer{
+
+   margin-top:30%;
+}
