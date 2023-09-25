@@ -5,7 +5,7 @@ body{
     min-width:50%;
     max-width:100%;
     background-color: rgb(0, 0, 0);
-   
+    height: 1500    px;
     z-index: -1;
 }
 
@@ -27,6 +27,10 @@ article{
     z-index: -1;
     height: 1200px;
     top: 100px;
+}
+
+.footer {
+    margin-top: 330px;
 }
 
 
@@ -371,7 +375,7 @@ div.term>p>a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1025px){
     .border .slideshow-container {
         display: none;
         float: left;
