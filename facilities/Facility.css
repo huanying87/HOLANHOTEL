@@ -1,0 +1,1002 @@
+@charset "utf"; 
+
+
+@font-face{
+
+  font-family: caveat;
+  src:url(../Caveat-VariableFont_wght.ttf)
+}
+
+@font-face{
+
+  font-family: grypen;
+  src:url(../QwitcherGrypen-Bold.ttf)
+}
+
+body{
+  min-width:50%;
+  max-width:100%;
+   line-height: 1.5;
+
+ 
+}
+
+
+*{
+
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/*header*/
+header{
+
+  display:flex;
+  background-color:#Baa382;
+  width:100%;
+  padding:12px;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  z-index:1;
+  
+   
+ 
+}
+
+
+.mainlogo{
+  
+  
+  font-size:30px;
+ font-weight:bold;
+ font-family:caveat;
+ width:39%;
+ 
+  
+}
+.mainlogo a{
+
+  color:white;
+  text-decoration: none;
+}
+
+.mainlogo img{
+
+  width:60px;
+  border-radius: 30px;
+  vertical-align: middle;
+  
+
+}
+/*navigation list*/
+.navlist{
+
+  line-height:50px;
+  width:100%;
+  
+ 
+  
+  
+}
+.menuicon{
+
+  display:none;
+}
+.menu-icon{
+
+width:20px;
+
+  
+ 
+}
+
+.close-icon{
+
+  width:20px;
+
+}
+
+#check{
+ 
+display:none;
+  
+}
+
+.navlist a{
+
+ margin-left:20px;
+ color:white;
+ text-decoration: none;
+ font-size:20px;
+ position:relative;
+ 
+}
+.navlist a::before{
+
+  content:"";
+  position:absolute;
+  width:0;
+  bottom:0;
+  height:2px;
+  background: white;
+ transition:0.3s;
+  
+}
+.navlist a:hover::before{
+
+  width:100%;
+  
+}
+
+@media only screen and (min-width:977px){
+
+  /*header*/
+header{
+
+  display:flex;
+  background-color:#Baa382;
+  width:100%;
+  padding:20px;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+  z-index:1;   
+ 
+}
+
+
+.mainlogo{
+  
+  
+  font-size:30px;
+ font-weight:bold;
+ font-family:caveat;
+ width:33%;
+
+ 
+  
+}
+.mainlogo a{
+
+  color:white;
+  text-decoration: none;
+}
+
+.mainlogo img{
+
+  width:60px;
+  border-radius: 30px;
+  vertical-align: middle;
+  
+
+} 
+}
+
+@media only screen and (max-width:984px){
+.navlist{
+
+
+  position:absolute;
+  background-color:#Baa382;
+  width:100%;
+  height:0;
+  overflow:hidden;
+  left:0;
+  top:100%;
+  transition:.2s ease;
+     
+}
+.navlist a{
+
+  display:block;
+  text-align:center;
+  font-size:1.5rem;
+  margin:1rem 0;
+}
+
+
+.menuicon{
+
+  display:inline-flex;
+  width:20px;
+  height:25px;
+  margin-top:13px;
+  margin-right:25%;
+  cursor:pointer;
+     
+}
+
+.close-icon{
+
+  display:none;
+}
+
+
+#check:checked~.menuicon .menu-icon{
+
+display:none;
+}
+
+#check:checked~.menuicon .close-icon{
+
+  display:block;
+}
+
+#check:checked~ .navlist{
+
+  height:30rem;
+}
+
+.navlist a:hover{
+
+  background-color:#99856a;
+
+}
+
+.navlist a::before{
+  display:none; 
+  
+}
+
+
+}
+
+/*dropdown for profile*/
+.profiledrop{
+
+ right:0;
+ width:3%;
+ 
+}
+.profilebutton{
+
+  background:none;
+  border:none;
+   line-height:65px;
+  
+}
+.profilebutton img{
+  width:20px;
+}
+.profiledrop{
+
+  position:relative;
+  
+}
+.profilecontent{
+
+  position:absolute;
+  background-color:#b5894b;
+  width:140px;       
+  right:20px;
+  border-radius:12px; 
+  display:none;
+  z-index:1;
+  top:40px;
+
+}
+.profilecontent a{
+
+  color:white;
+  text-decoration: none;
+  text-align:center;
+  padding:15px;
+  display:block;
+
+  
+
+}
+.profilebutton:hover{
+
+  opacity:0.5;
+  cursor: pointer;
+
+}
+
+.profiledrop:hover .profilecontent{
+
+  display:block;
+
+}
+.profilecontent a:hover{
+
+  background-color:#c7a27b;
+  border-radius:12px; 
+}
+/*adjust the position of the image*/
+.rowfaciliti {
+  display:-ms-flex;
+  display: flex;
+  padding: 0 4px;
+  float: left;
+  z-index: -3;
+  margin-left: 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  padding: 0 4px;
+}
+
+div#column1 {
+  margin-left: 10px;
+}
+
+div#column2 {
+  margin-left: 10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  
+}
+
+video.video {
+  width: 100%;
+}
+
+/*to design the button*/
+  #myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #383737;
+    color: white;
+    font-size: 16px;
+    padding: 18px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.9;
+  } 
+
+  #myBtn:hover{
+    background-color: rgb(124, 122, 122);
+  }
+
+.btn {
+    margin-left: -400px;
+    margin-top: 780px;
+}
+
+.btn2 {
+  margin-left: -400px;
+  margin-top: 1250px;
+}
+
+.btn3 {
+  margin-left: -400px;
+  margin-top: 1500px;
+}
+
+.btn4 {
+  margin-left: -400px;
+  margin-top: 1910px;
+}
+
+.btn5 {
+  margin-left: 230px;
+  margin-top: 880px;
+}
+
+.btn6 {
+  margin-left: 230px;
+  margin-top: 1140px;
+}
+
+.btn7 {
+  margin-left: 230px;
+  margin-top: 1440px;
+}
+
+.btn8 {
+  margin-left: 230px;
+  margin-top: 1910px;
+}
+
+.btn9 {
+  margin-left: 860px;
+  margin-top: 930px;
+}
+
+.btn10 {
+  margin-left: 860px;
+  margin-top: 1190px;
+}
+
+.btn4_1 {
+  margin-left: 860px;
+  margin-top: 1600px;
+  z-index: 1;
+}
+
+.btn11 {
+  margin-left: 860px;
+  margin-top: 1900px;
+}
+
+/* the information of the facilities*/
+.consultation-column {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  color: #555;
+  font-size: 25px;
+}
+
+ul.list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+  font-size: 25px;
+}
+
+button#bookingNow {
+  background-color: rgb(121, 85, 39);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+button#bookingNow:hover {
+  background-color: rgb(185, 136, 72);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin-left: auto;
+  background-color: antiquewhite;
+  margin: auto;
+  padding: 20px;
+  height: 600px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 60px 60px 800px #0a0a0a;
+}
+
+/* The Close Button */
+.close
+ {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover
+ {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:focus
+{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*set the animated of the image when the pointer touch it*/
+img#size1 {
+  width: 610px;
+  height: 300px;
+  z-index: -1;
+}
+
+img#size2 {
+  width: 610px;
+  height: 450px;
+  z-index: -1;
+}
+
+img#size3 {
+  width: 610px;
+  height: 250px;
+  z-index: -1;
+}
+
+img#size4 {
+  width: 610px;
+  height: 400px;
+  z-index: -1;
+}
+
+
+img#size1:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s;
+}
+
+img#size2:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s;
+}
+
+img#size3:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s;
+}
+
+img#size4:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s;
+}
+
+@media only screen and (max-width:1710px){
+  video.video{
+    width: 2130px;
+  }
+
+  img#size1 {
+    width: 702px;
+    height: 300px;
+  }
+  
+  img#size2 {
+    width: 702px;
+    height: 450px;
+  }
+  
+  img#size3 {
+    width: 702px;
+    height: 250px;
+  }
+  
+  img#size4 {
+    width: 702px;
+    height: 400px;
+  }
+
+  div#column1 {
+    margin-left: 1px;
+  }
+  
+  div#column2 {
+    margin-left: 1px;
+  }
+
+  img#size1:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+  }
+  
+  img#size2:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+  }
+  
+  img#size3:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+  }
+  
+  img#size4:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+  }
+
+  .btn {
+    margin-left: 90px;
+    margin-top: 1090px;
+  }
+
+  .btn2 {
+    margin-left: 90px;
+    margin-top: 1550px;
+  }
+
+  .btn3 {
+    margin-left: 90px;
+    margin-top: 1800px;
+  }
+
+  .btn4 {
+    margin-left: 90px;
+    margin-top: 2210px;
+  }
+
+  .btn5 {
+    margin-left: 800px;
+    margin-top: 1180px;
+  }
+
+  .btn6 {
+    margin-left: 800px;
+    margin-top: 1460px;
+  }
+
+  .btn7 {
+    margin-left: 800px;
+    margin-top: 1750px;
+  }
+
+  .btn8 {
+    margin-left: 800px;
+    margin-top: 2210px;
+  }
+
+  .btn9 {
+    margin-left: 1520px;
+    margin-top: 1240px;
+  }
+
+  .btn10 {
+    margin-left: 1520px;
+    margin-top: 1500px;
+  }
+
+  .btn4_1 {
+    margin-left: 1520px;
+    margin-top: 1890px;
+  }
+
+  .btn11 {
+    margin-left: 1520px;
+    margin-top: 2210px;
+  }
+  footer{
+    width:2130px;
+  }
+ 
+}
+
+html{
+  background-color: rgba(186, 186, 186, 0.768);
+}
+
+/* Footer */
+.containerf{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+
+footer{
+	background-color: #3d3b38;
+    padding: 70px 0;
+    bottom:0; 
+    clear:both;
+  
+   
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #fff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ebebeb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 6px;
+	text-align: center;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+#facebook{
+    width: 30px;
+    padding-top: 4px;
+}
+
+#twitter{
+    margin-bottom: 4px;
+    padding-top: 10px;
+    width: 20px;
+}
+
+#instagram{
+    width: 20px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+}
+
+#whatsapp{
+    width: 20px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* Chat Box */
+.chat-container {
+    position: relative;
+    display: inline-block;
+}
+
+.show-btn {
+    transform: rotate(-90deg);
+    position: fixed;
+    min-width: 64px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%; 
+    right: -32px;
+    font-weight: 500;
+    font-family: "Reforma 1969","AXtManalBold Regular",Helvetica,Arial,"Microsoft Yahei","PingFang SC","PingFang TC","PingFang HK","Hiragino Sans",sans-serif;
+    z-index: 1;
+    line-height: 1.75;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    background-color: #BAA382;
+    border-radius: 12px;
+}
+
+.show-btn svg {
+    width: 30px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#show:checked ~ .wrapper{
+    display:block;
+}
+
+.wrapper{
+    display:none;
+    width: 320px;
+    height: 340px;
+    margin: 60px auto;
+    background: #fff;
+    position: fixed;
+    right: 4%;
+    bottom: -50px;
+    border-radius: 10px;
+   
+}
+
+h5{
+    color: #fff;
+    padding: 15px;
+    background: #BAA382;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+.chat{
+    display: flex;
+}
+
+.chat, .chatbox{
+    overflow: auto;
+    max-height: 75%; 
+}
+
+.chatbox .incoming span{
+    height: 32px;
+    width: 32px;
+    background: #BAA382;
+    align-self: flex-end;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+}
+
+.chatbox-toggler{
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    background: #BAA382;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper p{
+    color: white;
+    white-space: pre-wrap;
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #BAA382;
+    border-radius: 10px 10px 0 10px;
+}
+
+.incoming p {
+    color: black;
+    background: lightgray;
+    border-radius: 10px 10px 10px 0;
+}
+
+.outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chat-input{
+    border-radius: 5%;
+    background-color: #BAA382;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 5px 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input textarea {
+    height: 30px;
+    width: 100%;
+    border: none;
+     outline: none;
+    font-size: 13px;
+    resize: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+
+}
+
+.chat-input span{
+    align-self: flex-end;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.chat-input textarea:valid ~ span{
+    visibility: visible;
+}
+
+.chat-input::placeholder{
+    color: black;
+}
+
+input:focus{
+    border-color: #BAA382;
+}
+
+
+.wrapper{
+    animation: popup 0.5s;
+
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
