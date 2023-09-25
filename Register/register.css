@@ -15,11 +15,13 @@ body{
     min-width: 100%; 
     min-height: 100%;
     z-index: -1;
-    height: 1200px;
+    height: 1400px;
     top: 100px;
   }
 
-
+.footer {
+    margin-top: 200px;
+}
 
 /*set the size of the register border*/
 .sign-in_method {
@@ -244,7 +246,7 @@ label#password3 {
 
 .button3>button {
     width: 98%;
-    margin:auto ;
+    margin-top:120px ;
     margin-left: 3%;
     border: solid transparent;
     padding: 10px;
