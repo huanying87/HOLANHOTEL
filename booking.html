@@ -1,0 +1,269 @@
+<!DOCTYPE html>>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="booking/booking.css" rel="stylesheet">
+        <link rel="stylesheet" href="HOME/index.css">
+        <script src="booking/script.js"></script>
+        <script src="Support/chat.js"></script>
+        <title>Booking</title>
+</head>
+<body>
+    <header>
+        <div class="mainlogo">
+            <a href="index.html" class="logo"><img src="icon/logo.png"/>HOLAN HOTEL</a> 
+           
+       </div> 
+       <input type="checkbox" id="check">
+       <label for="check" class="menuicon"> 
+       <img src="icon/menuicon.png"  class="menu-icon"/>
+       <img src="icon/close.png"  class="close-icon"/></label>
+    
+       <nav class="navlist" id="navlist">
+        <a  href="Facilities.html">Facilities</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>  
+        <a href="review.html">Review</a>
+        <a href="Room&Residents.html">Room & Residents</a>
+        <a href="support.html">Support</a>
+        <a href="booking.html">Book Now</a>
+      
+        
+          
+    </nav>
+      
+    
+    
+    <div class="profiledrop">
+      <button  class="profilebutton"><img src="icon/profileicon.png"/></button>
+      
+      <div class="profilecontent">
+      <a href="Sign_in.html">SIGN IN</a>
+      <a href="register.html">SIGN UP</a>
+       </div>
+      </div>
+         </header>
+    <article>
+        
+        <div class="bookingNow">
+            <div class="picture">
+                <img src="booking/picture/ag-k-eunirCQ_WXk-unsplash.jpg" alt="booking" id="bookingNow"/>
+                <a href="#"><button type="button" id="booking">Booking Now</button></a>
+                <div class="bookSheet">
+                    <input type="text" name="visitor_name" id="book" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
+                    <input type="date" name="checkin" id="book" placeholder="Check in date" required>
+                    <input type="date" name="checkout" id="book" placeholder="Check out date" required>
+                    <input type="number" name="total_adults" id="book" placeholder="Adult : 2" min="1" required>
+                    <input type="number" name="total_children" id="book" placeholder="Children : 2" min="0" required>
+                </div>
+                <div class="Book">
+                    <h1>Booking Room Now</h1>
+                    <p>SEARCH ROOMS</p>
+                </div>
+            </div>
+
+            <h1 id="kingWord">King Size Room</h1>
+
+            <div class="KingRoom">
+                <div class="bigRoom">
+                    <img src="booking/picture/king room.jpg" alt="king" id="king"/>
+                    <div id="borderKing">
+                        <h1 id="word1">Superior King Room</h1>
+                        <ul class="roomicon">
+                            <li class="how">5</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$1088</li></ul>
+                        <button type="button" id="button1" onclick="book(this)">Book</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h1>Complete Imformation</h1>
+                                <div id="firstName1">
+                                    <label for="fname">&nbsp;&nbsp;&emsp;Guest's First Name</label></br>
+                                    <input type="text" class="form" id="name1" name="firstname" placeholder="Enter here.....">
+                                </div>
+                                <div id="secondName1">
+                                    <label for="fname">&nbsp;&nbsp;&emsp;Guest's Last Name</label></br>
+                                    <input type="text" class="form" id="name2" name="firstname" placeholder="Enter here.....">
+                                </div>
+                                <div id="email1">
+                                    <label for="fname">&nbsp;&nbsp;&emsp;E-mail Address</label></br>
+                                    <input type="text"  class="form" id="email" name="firstname" placeholder="Enter here.....">
+                                </div>
+                                <div id="phone1">
+                                    <label for="fname">&nbsp;&nbsp;&emsp;Phone Number</label></br>
+                                    <input type="tel"  class="form" id="phone" name="firstname" placeholder="Enter here.....">
+                                </div>
+
+                                <button type="button" id="payment">Pay</button>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="anotherKing">
+                    <img src="booking/picture/super king room.webp" alt="king2" id="king2"/>
+                    <div id="borderKing3">
+                        <h1 id="word1">King Room</h1> 
+                        <ul class="roomicon">
+                            <li class="how">4</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$588</li></ul>
+                    </div>
+                    <img src="booking/picture/super king 2.webp" alt="king3" id="king3"/>
+                    <div id="borderKing3">
+                        <h1 id="word1">Presidential Suite</h1>
+                        <ul class="roomicon">
+                            <li class="how">10</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$1388</li></ul>
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="kingWord">Twin Size Room</h1>
+
+            <div class="TwinRoom">
+                <div class="twinRoom">
+                    <div id="borderTwin">
+                        <h1 id="word1">Cozy Twin size room</h1>
+                        <ul class="roomicon">
+                            <li class="how">2</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$588</li></ul>
+                        <button type="button" id="button1" onclick="book(this)">Book</button>
+                        </p>
+                    </div>
+                    <img src="booking/picture/twin room.jpg" alt="twin" id="twin"/>
+                </div>
+                <div class="anotherTwin">
+                    <div id="borderTwin1">
+                        <h1 id="word1">Greenery Twin Room</h1>
+                        <ul class="roomicon">
+                            <li class="how">3</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$288</li></ul>
+                    </div>
+                    <img src="booking/picture/small room.jpg" alt="Twin2" id="Twin2"/>
+                    <div id="borderTwin3">
+                        <h1 id="word1">Superior Twin Room</h1>
+                        <ul class="roomicon">
+                            <li class="how">4</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$788</li></ul>
+                    </div>
+                    <img src="booking/picture/beutiful two bed rooom.jpg" alt="king3" id="Twin3"/>
+                </div>
+            </div>
+
+            <h1 id="kingWord">Special Size Room</h1>
+
+            <div class="SpecialRoom">
+                <div class="specialRoom">
+                    <img src="booking/picture/gamingroom.jpg" alt="special" id="special"/>
+                    <div id="borderSpecial">
+                        <h1 id="word1"> e-Sports Room </h1>
+                        <ul class="roomicon">
+                            <li class="how">6</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$1588</li></ul>
+                        <button type="button" id="button1" onclick="book(this)">Book</button>
+                    </div>
+                </div>
+                <div class="anotherSpecial">
+                    <img src="booking/picture/children room.webp" alt="special2" id="special2"/>
+                    <div id="borderSpecial2">
+                        <h1 id="word1">Children's Rooms</h1>
+                        <ul class="roomicon">
+                            <li class="how">4</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$988</li></ul>
+                    </div>
+                    <img src="booking/picture/o_1fma4bvnbjf9jf21mv91s5h1vr011.png" alt="special3" id="special3"/>
+                    <div id="borderSpecial3">
+                        <h1 id="word1">Wedding Room</h1>
+                        <ul class="roomicon">
+                            <li class="how">2</li>
+                            <li class="bed">King</li>
+                            <li class="area">119-143 sqm / 1,280-1,540 sqft</li>
+                            <li id="dollar">$1288</li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <input type="checkbox" id="show">
+   <label for="show" class="show-btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+           <path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path>
+           <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>
+           <span class="chat">
+               <span>Chat</span>
+           </span>
+   </label>
+       <div class="wrapper">
+           <h5>Let's Chat? - Online</h5>
+
+           <ul class="chatbox">
+           <li class="chat incoming">
+               <span class="material-symbols-outlined">smart_toy</span>
+           <p>Hi there 👋 <br> How can I help you today?</p>
+           </li>
+
+           <div class="chat-input">
+              <textarea placeholder="Enter a message..." required></textarea>
+              <span id="send-btn" class="material-symbols-outlined">send</span>
+           </div>
+
+           <div id="chat-messages"></div>
+       </div>
+   
+
+
+
+<footer class="footer">
+    <div class="containerf">            
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="aboutus.html">our services</a></li>
+                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="restaurant.html">Rstaurant</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="review.html">Review</a></li>
+                  
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/tee.mingkai/"><img src="icon/facebook.png" alt="facebook" id="facebook"></a>
+                    <a href="https://twitter.com/Tee_Ming_Kai"><img src="icon/twitter.png" alt="twitter" id="twitter"></a>
+                    <a href="https://www.instagram.com/mingkai826/"><img src="icon/instagram.png" alt="instagram" id="instagram"></a>
+                    <a href="https://wa.me/+6010929968"><img src="icon/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

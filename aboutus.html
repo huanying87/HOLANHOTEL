@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ABOUT US</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" >
+    <link href="HOME/index.css" rel="stylesheet"/>
+    <link href="About Us/aboutus.css" rel="stylesheet"/>
+    <script src="Support/chat.js"></script>
+
+
+</head>
+
+<body>
+  
+  <header>
+    <div class="mainlogo">
+        <a href="index.html" class="logo"><img src="icon/logo.png"/>HOLAN HOTEL</a> 
+       
+   </div> 
+   <input type="checkbox" id="check">
+   <label for="check" class="menuicon"> 
+   <img src="icon/menuicon.png"  class="menu-icon"/>
+   <img src="icon/close.png"  class="close-icon"/></label>
+
+   <nav class="navlist" id="navlist">
+    <a  href="Facilities.html">Facilities</a>
+    <a href="events.html">Events</a>
+    <a href="offers.html">Offers</a>  
+    <a href="review.html">Review</a>
+    <a href="Room&Residents.html">Room & Residents</a>
+    <a href="support.html">Support</a>
+    <a href="booking.html">Book Now</a>
+  
+    
+      
+</nav>
+  
+
+
+<div class="profiledrop">
+  <button  class="profilebutton"><img src="icon/profileicon.png"/></button>
+  
+  <div class="profilecontent">
+  <a href="Sign_in.html">SIGN IN</a>
+  <a href="register.html">SIGN UP</a>
+   </div>
+  </div>
+     </header>
+    
+
+         <div class="title"><h1>WHY SAY WE ARE CLOSEST TO THE SUN</h1></div>
+
+
+<div class="slide-container">
+  <div class="Slideshow">
+   
+    <img src="About us/picture/sunset1.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+  
+    <img src="About us/picture/sunset2.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+   
+    <img src="About us/picture/sunset3.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slideshow">
+    
+    <img src="About us/picture/sunset4.jpg" style="width:100%">
+  </div>
+
+  <div class="Slideshow">
+    <div class="numbertext"></div>
+    <img src="About us/picture/sunset5.jpg" style="width:100%">
+  </div>
+    
+  <div class="Slideshow">
+   
+    <img src="About us/picture/sunset6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusslides(-1)">❮</a>
+  <a class="next" onclick="plusslides(1)">❯</a>
+
+
+
+  <div class="row">
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset1.jpg" style="width:100%" onclick="Slide(1)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset2.jpg" style="width:100%" onclick="Slide(2)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset3.jpg" style="width:100%" onclick="Slide(3)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset4.jpg" style="width:100%" onclick="Slide(4)" >
+    </div>
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset5.jpg" style="width:100%" onclick="Slide(5)">
+    </div>    
+    <div class="column">
+      <img class="smallimg cursor" src="About us/picture/sunset6.jpg" style="width:100%" onclick="Slide(6)" >
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let slidenum=1;
+  showslides(slidenum);
+
+  function plusslides(n){
+
+    showslides(slidenum +=n);
+  }
+
+  function Slide(n){
+
+    showslides(slidenum=n);
+  }
+
+  function showslides(n){
+
+    let i;
+    let slides=document.getElementsByClassName("Slideshow");
+    let dots=document.getElementsByClassName("smallimg");
+    if(n>slides.length)
+    {slidenum = 1}
+
+    if(n < 1)
+    {slidenum = slides.length}
+
+    for(i=0;i<slides.length;i++){
+
+      slides[i].style.display="none";
+
+
+    }
+    for(i=0;i<dots.length;i++){
+
+      dots[i].className=dots[i].className.replace("active","");
+    }
+    slides[slidenum-1].style.display="block";
+    dots[slidenum-1].className+="active";
+  }
+</script>
+    
+<div class="about-container">
+
+  <article class="history">
+
+    <div class="story">
+    <h1>OUR STORY</h1>
+    <p>HOLAN HOTEL has a long history. It was established in July 2023.
+       Our five founders, commonly known as "HOLAN MEMBER" are committed to making those who don't 
+       know why they come to HOLAN feel at home. At the same time, they like the sun, and they hope to 
+       convey their love to more people,so they established this HOTEL and their slogan 
+       "We are the people closest to the sun."Our desire is for everyone to be comfortable and enjoy their trip
+       with these ideas in mind we created HOLAN HOTEL and achieved success.
+      </p></div>
+
+       <div class="hotel">
+       <img src="About us/picture/images.jpg" alt="HOLAN HOTEL" width="100%"/></div>
+  </article>
+
+
+  <div class="fivelegend">
+
+    <h1>HERE ARE THE FIVE HOLAN MEMBER</h1>
+
+    <div class="member">
+
+      <div class="member1">
+        <img src="About us/picture/lefthand.jpg"  class="pmember1">
+       
+        <p>This person known as Road People.This is the person responsible for creating and designing the room. 
+          Under his design, the rooms look more like people live in them and have 
+          a 5-star Michelin rating. His design originated from the room in the sun that he
+           wanted to imagine when the five HOLAN members went to see the sun. 
+           His wish was to bring these rooms into the sun</p>
+      </div>
+      <div class="member2">
+        <img src="About us/picture/leftleg.jpg"  class="pmember2">
+  
+        <p>This person known as King of HOLAN.This is the person responsible for customer service. 
+          Under his design, the customer service look more like serve to normal person and have 
+          a 5-star Michelin rating. With him, we can better listen to our customers' requirements and 
+          make improvements. We also think that with customers actively providing feedback, 
+          his work will become smoother and our HOTEL will become better and better.</p>
+      </div>
+      <div class="member3">
+        <img src="About us/picture/tou.jpg"  class="pmember3">
+        <p>This person known as QUEEN of HOLAN.This is the person responsible for arrange booking,check IN and check OUT. 
+          Under his design, the arranging of booking look more like booking the room and have 
+          a 5-star Michelin rating. 
+          People who come to HOLAN HOTEL often say that everything here is strange but the booking system is the most normal. 
+          This is all because of him. He made the whole booking go very smoothly.</p>
+      </div>
+      <div class="member4">
+        <img src="About us/picture/rightleg.jpg"  class="pmember4">
+        <p>This person known as THIRD TREE of HOLAN.This is the 
+          person responsible for creating and designing events,facilities and offer. 
+          Under his design, the event,facilities and offer look more like the event,facilities and offer and have 
+          a 5-star Michelin rating. It is he who has changed the atmosphere of the entire HOLAN HOTEL. 
+          These are also one of our buying points and the reason why customers come to our HOTEL.  </p>
+      </div>
+      <div class="member5">
+        <img src="About us/picture/righthand.jpg"  class="pmember5">
+        <p>This person known as FOURT TREE of HOLAN.This is the person responsible for management data of customer. 
+          Under his design, the management data of customer look more like management data of customer and have 
+          a 5-star Michelin rating. He developed very secure systems to keep everyone safe. We are also internationally certified 
+          as the most secure data management place on the Sun. The system he developed is called SIGN IN and register </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <h1>OUR ACHIVEMENT</h1>
+   <div class="achievement-content">
+   <div class="michelin">
+    <img src="About us/picture/michelin.png" width="100%" class="michelinimg">
+
+    <p>According to the hard from 5 HOLAN MEMBER.We approve as a 5-star in michelin Hotel.</p>
+   </div>
+   <div class="nobel">
+    <img src="About us/picture/nuobeer.jpg" width="100%" class="nobelimg">
+
+    <p>According to the hard from 5 HOLAN MEMBER.We get the Nobel Prize as the HOLAN HOTEL
+      make contribute in help humans move to the sun.
+    </p>
+
+   </div>
+   <div class="guinness">
+    <img src="About us/picture/jinishi.png" width="100%" class="jinishiimg">
+
+      <p>We are the fast and the first hotel to get the 5-star in michelin.No any hotel get 
+        in the food award in the world.But we are the first one and the fast in the world to get this award.
+        We get this award within 3 days since we open.
+
+      </p>
+   
+   </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+<div class="service">
+
+  <img class="servicebackground" src="About us/picture/service.jpg" width="100%"/>
+   <div class="colorabout"></div>
+  <div class="servicecontent">
+  <h1>OUR SERVICE</h1>
+  <p>We attach great importance to our guests' accommodation experience. 
+    In order to make them feel at home, we make our waiters as friendly as mothers. 
+    We will listen to all opinions just as your mother listened to your cries. In addition,
+    we have a Michelin five-star restaurant and chefs to make guests feel the taste of mother.
+    Our chefs have specially traveled around the world to experience the food cooked by mothers 
+    from different countries and create the most suitable food for mothers.</p>
+   <div class="serviceimg1">
+    <img src="About us/picture/service.jpg" width="30%"/>
+    <img src="About us/picture/HOLAN RESTAURANT.png" width="20%"/>
+   </div>
+
+   <p>We also provide free WIFI, which is WIFI developed by ourselves. Its technology works on the sun. In addition, 
+    we also provide various facilities for our guests to use. These facilities are also applicable to the sun.
+    Besides that,we also provide automatically Check IN and Check Out via the system we developed.This system is 
+    developed when the five HOLAN MEMBER visit to sun.
+  </p>
+
+  <div class="serviceimg2">
+    <img src="About us/picture/wifi.jpg" width="30%"/>
+    <img src="About us/picture/facilities.jpg" width="30%"/>
+    <img src="About us/picture/auto.png" width="20%"/>
+   </div>
+  </div>
+  
+</div>
+
+<input type="checkbox" id="show">
+   <label for="show" class="show-btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+           <path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path>
+           <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path></svg>
+           <span class="chat">
+               <span>Chat</span>
+           </span>
+   </label>
+       <div class="wrapper">
+           <h5>Let's Chat? - Online</h5>
+
+           <ul class="chatbox">
+           <li class="chat incoming">
+               <span class="material-symbols-outlined">smart_toy</span>
+           <p>Hi there 👋 <br> How can I help you today?</p>
+           </li>
+
+           <div class="chat-input">
+              <textarea placeholder="Enter a message..." required></textarea>
+              <span id="send-btn" class="material-symbols-outlined">send</span>
+           </div>
+
+           <div id="chat-messages"></div>
+       </div>
+   
+
+
+
+<footer class="footer">
+    <div class="containerf">            
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="aboutus.html">our services</a></li>
+                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="restaurant.html">Rstaurant</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="review.html">Review</a></li>
+                  
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/tee.mingkai/"><img src="icon/facebook.png" alt="facebook" id="facebook"></a>
+                    <a href="https://twitter.com/Tee_Ming_Kai"><img src="icon/twitter.png" alt="twitter" id="twitter"></a>
+                    <a href="https://www.instagram.com/mingkai826/"><img src="icon/instagram.png" alt="instagram" id="instagram"></a>
+                    <a href="https://wa.me/+6010929968"><img src="icon/whatsapp.png" alt="whatsapp" id="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
