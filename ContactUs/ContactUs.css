@@ -124,7 +124,22 @@ input[type=submit]:hover{
 text-align: start;
 }
 
+@media only screen and (max-width:1025px) {
+    input[type=text]{
+        border-radius: 5px;
+        border: 1px white;
+        width: 24rem;
+        background-color: antiquewhite;
+        padding: 6px;
+    }
 
+    body{
+        background-image: url('banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+}
+}
 
 
 
